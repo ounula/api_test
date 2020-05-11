@@ -99,7 +99,8 @@ class ReadExcel(object):
 
 
 if __name__ == '__main__':
-    excel = ReadExcel("cases.xlsx", "login")
+    excel = ReadExcel("../data/apicases.xlsx", "login")
     data = excel.read_data()
+    print(data)
     print(*data)
     print(len(data))
